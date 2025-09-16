@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e89b8dba-6089-4c5c-b088-fb3837f496b4" name="更改" comment="20250912 v0.1&#10;功能：&#10;1、运行程序，按config的配置来设置系统的音量&#10;2、config为配置文件，可用控制音量和静音">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e89b8dba-6089-4c5c-b088-fb3837f496b4" name="更改" comment="20250916 v0.2&#10;功能：&#10;1、增加日志功能">
       <change beforePath="$PROJECT_DIR$/audio_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/audio_manager.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +68,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757650441651</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="20250916 v0.2&#10;功能：&#10;1、增加日志功能">
+      <option name="closed" value="true" />
+      <created>1757988722854</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1757988722854</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -85,6 +92,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="20250912 v0.1&#10;功能：&#10;1、运行程序，按config的配置来设置系统的音量&#10;2、config为配置文件，可用控制音量和静音" />
-    <option name="LAST_COMMIT_MESSAGE" value="20250912 v0.1&#10;功能：&#10;1、运行程序，按config的配置来设置系统的音量&#10;2、config为配置文件，可用控制音量和静音" />
+    <MESSAGE value="20250916 v0.2&#10;功能：&#10;1、增加日志功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="20250916 v0.2&#10;功能：&#10;1、增加日志功能" />
   </component>
 </project>

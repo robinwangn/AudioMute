@@ -8,6 +8,7 @@
 import yaml
 import os
 import logging
+import sys
 from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
 from ctypes import POINTER, cast
 from comtypes import CLSCTX_ALL
@@ -19,8 +20,16 @@ def setup_logger():
     
     # 避免重复添加处理器
     if not logger.handlers:
+        # 获取可执行文件所在目录（兼容PyInstaller打包后的环境）
+        if getattr(sys, 'frozen', False):
+            # 如果是打包后的exe环境
+            application_path = os.path.dirname(sys.executable)
+        else:
+            # 如果是Python脚本环境
+            application_path = os.path.dirname(os.path.abspath(__file__))
+        
         # 创建文件处理器，将日志写入程序所在目录
-        log_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'audio_manager.log')
+        log_file = os.path.join(application_path, 'audio_manager.log')
         file_handler = logging.FileHandler(log_file, encoding='utf-8')
         file_handler.setLevel(logging.DEBUG)
         
@@ -36,6 +45,17 @@ def setup_logger():
 def load_config(config_path="audio_config.yaml"):
     logger = setup_logger()
     logger.info("程序启动，开始加载配置文件")
+    
+    # 获取可执行文件所在目录（兼容PyInstaller打包后的环境）
+    if getattr(sys, 'frozen', False):
+        # 如果是打包后的exe环境
+        application_path = os.path.dirname(sys.executable)
+    else:
+        # 如果是Python脚本环境
+        application_path = os.path.dirname(os.path.abspath(__file__))
+    
+    # 构建配置文件的完整路径
+    config_path = os.path.join(application_path, config_path)
     
     if not os.path.exists(config_path):
         logger.error(f"配置文件未找到：{config_path}")
