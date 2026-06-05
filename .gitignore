@@ -1,0 +1,19 @@
+# PyInstaller 打包中间文件（不上传）
+/build/
+
+# IDE 配置
+/.idea/
+*.pyc
+__pycache__/
+
+# 运行时生成的日志文件
+*.log
+
+# Python 虚拟环境
+venv/
+.venv/
+env/
+
+# Windows 系统文件
+Thumbs.db
+desktop.ini
