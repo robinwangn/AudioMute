@@ -1,5 +1,6 @@
 # PyInstaller 打包中间文件（不上传）
 /build/
+/dist/
 
 # IDE 配置
 /.idea/

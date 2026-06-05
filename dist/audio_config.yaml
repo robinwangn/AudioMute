@@ -1,3 +1,0 @@
-audio:
-  mute: true         # 是否静音（true/false）
-  volume: null       # 音量百分比（0.0 ~ 1.0），null 表示不设置
